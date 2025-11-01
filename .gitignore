@@ -1,0 +1,8 @@
+# lazy.nvim
+lazy-lock.json
+
+# temp files
+*.swp
+*.swo
+*.tmp
+
