@@ -5,3 +5,8 @@ vim.lsp.config('luals', {
 })
 
 vim.lsp.enable('luals')
+
+if vim.fn.executable("copilot-language-server") == 1 then
+  vim.lsp.enable("copilot")
+end
+
