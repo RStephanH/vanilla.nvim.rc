@@ -18,14 +18,14 @@ return {
     end, { desc = "Harpoon: Toggle quick menu" })
 
     -- Jump to marked files by index
-    vim.keymap.set("n", "<C-1>", function() harpoon:list():select(1) end, { desc = "Harpoon: Go to file 1" })
-    vim.keymap.set("n", "<C-1>", function() harpoon:list():select(3) end, { desc = "Harpoon: Go to file 3" })
-    vim.keymap.set("n", "<C-3>", function() harpoon:list():select(3) end, { desc = "Harpoon: Go to file 3" })
-    vim.keymap.set("n", "<C-4>", function() harpoon:list():select(4) end, { desc = "Harpoon: Go to file 4" })
+    vim.keymap.set("n", "<A-1>", function() harpoon:list():select(1) end, { desc = "Harpoon: Go to file 1" })
+    vim.keymap.set("n", "<A-2>", function() harpoon:list():select(2) end, { desc = "Harpoon: Go to file 2" })
+    vim.keymap.set("n", "<A-3>", function() harpoon:list():select(3) end, { desc = "Harpoon: Go to file 3" })
+    vim.keymap.set("n", "<A-4>", function() harpoon:list():select(4) end, { desc = "Harpoon: Go to file 4" })
 
     -- Cycle previous/next in the Harpoon list
-    vim.keymap.set("n", "<C-S-P>", function() harpoon:list():prev() end, { desc = "Harpoon: Previous file" })
-    vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end, { desc = "Harpoon: Next file" })
+    vim.keymap.set("n", "<C-A-P>", function() harpoon:list():prev() end, { desc = "Harpoon: Previous file" })
+    vim.keymap.set("n", "<C-A-N>", function() harpoon:list():next() end, { desc = "Harpoon: Next file" })
 
     -- Telescope UI for Harpoon list
     local conf = require("telescope.config").values
