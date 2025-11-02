@@ -1,5 +1,7 @@
 # lazy.nvim
 lazy-lock.json
+.crush/
+CRUSH.md
 
 # temp files
 *.swp
